@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ioinc Cloud Testing
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-title>Sign Up</ion-title>
+    <div>
+      <ion-label>Email</ion-label>
+      <input type = "text" [(ngModel)] = "user_model.email">
+    </div>
+    <div>
+      <ion-label>Password</ion-label>
+      <input type = "text" [(ngModel)] = "user_model.password">
+    </div>
+    <div>
+      <ion-label>Name</ion-label>
+      <input type = "text" [(ngModel)] = "user_model.name">
+    </div>
+    <button (click) = "newUser(user_model.email, user_model.password, user_model.name)">Submit</button>
+
+</ion-content>
